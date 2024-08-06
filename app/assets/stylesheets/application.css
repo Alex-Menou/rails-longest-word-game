@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .card-div {
+  margin: 0 auto; /* Centre horizontalement */
+  max-width: 50%; /* Largeur maximale de 50% de la largeur de l'écran */
+  padding: 20px; /* Espacement intérieur pour la démo */
+}
+
+ .center-div {
+  margin: 0 auto; /* Centre horizontalement */
+  max-width: 50%; /* Largeur maximale de 50% de la largeur de l'écran */
+  padding: 20px; /* Espacement intérieur pour la démo */
+}
+
+.lettrecontainer {
+  display: flex;
+  gap: 4px; /* Espacement entre les carrés */
+}
+
+.lettre {
+  width: 40px;
+  height: 40px;
+  background-color: #63afc9; /* Bleu clair */
+  border: 1px solid #020279; /* Bordure bleu foncé */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 30px; /* Ajusté pour le texte à l'intérieur du petit carré */
+}

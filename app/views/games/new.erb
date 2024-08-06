@@ -1,0 +1,22 @@
+
+<div class="constainer">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 center-div bg-light">
+      <h1>New game</h1>
+      <div class="lettrecontainer">
+        <% @letters.each do |letter| %>
+          <div class="lettre"><%= letter; %></div>
+        <% end %>
+      </div>
+      <form action="/score" method="post" data-turbo="false">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <%= hidden_field_tag :letters, @letters %>
+        <p>What is the longest word you can find?</p>
+        <div class="input-group mb-3">
+          <input type="text" name="answer" class="form-control" aria-label="Recipient's username" aria-describedby="button-play">
+          <button class="btn btn-outline-secondary" type="submit" id="button-play">Play</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
